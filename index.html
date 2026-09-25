@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="device-width" ,initial-scale="1.0" />
+    <title>Product Listing - Dottech Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="nav">
+            <h1>ShopHub</h1>
+            <button id="themeToggle">Dark</button>
+        </div>
+
+        <div class="controls">
+
+            <input type="text" id="search-input" placeholder="search products by name ...">
+            <div class="filters">
+
+                <div id="categoryChips"></div>
+
+                <select id="sortSelect">
+                    <option value="default">sort by</option>
+                    <option value="price-low">Price : Low -> High</option>
+                    <option value="price-High">Price : High -> Low</option>
+                    <option value="name"> Name : A -> Z </option>
+                </select>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div id="product-grid" class="grid"></div>
+        <dialog id="errorDialog">
+            <h2>No results found</h2>
+            <p>Try a different search or category.</p>
+            <button id="closeDialog">OK</button>
+        </dialog>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
